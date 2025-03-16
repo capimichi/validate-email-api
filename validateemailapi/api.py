@@ -14,7 +14,7 @@ app = FastAPI(
     version="1.0.0",
     servers=[
         {
-            "url": os.getenv("API_URL", "http://0.0.0.0:8000"),
+            "url": os.getenv("API_BASE_URL", "http://0.0.0.0:8000"),
             "description": "Server"
         },
     ]
